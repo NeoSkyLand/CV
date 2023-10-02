@@ -1,0 +1,100 @@
+*{margin:0;
+    padding:0;
+    box-sizing: border-box}
+
+/*body{background: yellow}*/
+
+/*variable*/
+:root{--rouge: red;
+    --typo1: 'Big Shoulders Stencil Text', cursive;
+    --typo2: 'Pinyon Script', cursive;
+/*taille de la police*/
+    --leger: 100;
+    --normal: 400;
+    --gras: 600;}
+
+        header{width: 100%;
+        height: 400px;
+        background: url(Banniere%20CV.png) no-repeat;
+        background-size: cover;
+        padding-top: 15p;
+            color: white }
+
+        a{color: white}
+
+        figure{width: 150px;
+        height: 150px;
+        background: white;
+        margin:auto;
+        border-radius: 50%;
+        padding-right: 30px;
+        overflow: hidden}
+/*Faire rentré l'image dans le rond sans que sa deborde*/
+        
+        header>section:nth-child(2)>h2{background: transparent;
+                                        width: auto;
+                                        color:white;
+                                        font-family:var(--typo1);
+                                        font-weight: var(--normal)}
+
+        header>section:nth-child(2){display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: space-around}
+
+        header>section:nth-child(2)>adress,h2,div{flex: 1;
+                                                  min-width: 320px;}
+
+        @media screen and (max-width:768px){
+            header>section:nth-child(2)>adress{order: 2}
+                                        href{text-align: end}}
+/*769px rupture de la taille de l'écran*/
+
+adress, a{text-decoration: none;
+          text-align: center;
+          margin-bottom: 8px}
+
+div{display: flex;
+    flex-direction: column}
+    
+        h1{text-align:center;
+            color:var(--rouge);
+            font-family:var(--typo1);
+            font-weight: var(--gras)}
+
+
+
+
+        main {width: 100%;
+/*flex permet l'alignement et le recadrage*/
+            display: flex;
+/*align-items = horizontale et justify-content = verticale, column = colonne et row = ligne*/
+            justify-content: center;
+            flex-direction: row}
+
+        main > section {width:100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap}
+
+        main > section > article {flex: 1;
+        /*320px taille iphone4*/ 
+            min-width: 320px;
+            min-height: 400px;
+            border: 1px solid black;}
+        article{padding: 40px}
+
+        h2{font-family: var(--typo2);
+            font-weight: 400;
+            color:white;
+        /*centrage du texte*/
+/*largeur*/ width: 80%;
+            text-align: center;
+        /*Effets Boutons*/
+            display:block;
+            background:black;
+            border-radius: 20px;
+            height: 50px;
+            line-height: 50px;
+            margin: auto}
+
+        
